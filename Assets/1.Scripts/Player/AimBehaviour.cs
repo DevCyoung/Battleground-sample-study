@@ -4,8 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
+<<<<<<< HEAD
 /// 마우스 오른쪽 버튼 조준 , 다른 동작을 대체해서 동작하게 됩니다. 
 /// 다른동작보다 먼저행동합니다.
+=======
+/// 마우스 오른쪽 버튼 조준 , 다른 동작을 대체해서 동작하게 됩니다.
+>>>>>>> a9f276337fcafeb4a9808d38ecd5701bbb1a91fd
 /// 마우스 휠버튼으로 좌우 카메라 변경
 /// 벽의 모서리에서 조준할때 상체를 살짝 기울여주는 기능.
 /// </summary>
@@ -13,7 +17,11 @@ public class AimBehaviour : GenericBehaviour
 {
 
     public Texture2D crossHair; // 십자선 이미지
+<<<<<<< HEAD
     public float aimTurnSmoothing = 0.15f; // 카메라를 향하도록 조준할때 회전속도
+=======
+    public float anumTurnSmoothing = 0.15f; // 카메라를 향하도록 조준할때 회전속도
+>>>>>>> a9f276337fcafeb4a9808d38ecd5701bbb1a91fd
     public Vector3 aimPivotoffset = new Vector3(0.5f, 1.2f, 0.0f);
     public Vector3 anumCamoffset = new Vector3(0.0f, 0.4f, -0.7f);
 
@@ -27,7 +35,10 @@ public class AimBehaviour : GenericBehaviour
 
     private void Start()
     {
+<<<<<<< HEAD
         //setup
+=======
+>>>>>>> a9f276337fcafeb4a9808d38ecd5701bbb1a91fd
         aimBool = Animator.StringToHash(AnimatorKey.Aim);
         conerBool = Animator.StringToHash(AnimatorKey.Corner);
 
