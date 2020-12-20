@@ -1822,8 +1822,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2609208030567954948}
-  - component: {fileID: 7319656134794639974}
   - component: {fileID: 7219609613718404819}
+  - component: {fileID: 7319656134794639974}
+  - component: {fileID: 5881099939110282577}
   - component: {fileID: 2699650407681518926}
   - component: {fileID: 2604532039950710681}
   - component: {fileID: 2604532039950710683}
@@ -1870,6 +1871,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7219609613718404819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603614137100792378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bfeb7eccce4e241abaccfb67d5d048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  turnSmoothing: 0.06
+  sprintFOV: 100
 --- !u!114 &7319656134794639974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1890,7 +1906,7 @@ MonoBehaviour:
   jumpInertialForce: 10
   speed: 0
   speedSeeker: 0
---- !u!114 &7219609613718404819
+--- !u!114 &5881099939110282577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1899,12 +1915,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2603614137100792378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3bfeb7eccce4e241abaccfb67d5d048, type: 3}
+  m_Script: {fileID: 11500000, guid: c31c3a6345dd63d4f904dc26ab3340a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
-  turnSmoothing: 0.06
-  sprintFOV: 100
+  crossHair: {fileID: 2800000, guid: 8e5c3bac4b251b743bd237d3611bd2dc, type: 3}
+  aimTurnSmoothing: 0.15
+  anumTurnSmoothing: 0.15
+  aimPivotoffset: {x: 0.5, y: 1.2, z: 0}
+  aimCamoffset: {x: 0, y: 0.4, z: -0.7}
 --- !u!95 &2699650407681518926
 Animator:
   serializedVersion: 3
