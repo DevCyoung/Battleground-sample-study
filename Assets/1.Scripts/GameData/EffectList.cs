@@ -6,8 +6,11 @@ public enum EffectList
 {
 	None = -1,
 	
-    bhole =  0,
-    fish =  1,
-    speak =  2,
+    bulletHole =  0,
+    flash =  1,
+    hitEffect =  2,
+    ShotEffects =  3,
+    sparks =  4,
+    tracer =  5,
 
 }

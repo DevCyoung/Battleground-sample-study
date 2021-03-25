@@ -38,14 +38,15 @@ public class SoundTool : EditorWindow
         EditorGUILayout.BeginVertical();
         {
             UnityObject source = soundSource;
-            SoundClip sound = soundData.soundClips[selection];
 
             EditorHelper.EditorToolTopLayer(soundData, ref selection, ref source, uiwidthMiddle);
+            
             soundSource = (AudioClip)source;
 
             EditorGUILayout.BeginHorizontal();
             {
                 EditorHelper.EditorToolListLayer(ref SP1, soundData, ref selection, ref source, uiwidthMiddle);
+                SoundClip sound = soundData.soundClips[selection];
                 soundSource = (AudioClip)source;
 
                 EditorGUILayout.BeginVertical();
@@ -76,6 +77,16 @@ public class SoundTool : EditorWindow
 
                                 if( soundSource != null )
                                 {
+                                    //Defalut
+                                    
+                                    //soundData.names[selection] = soundSource.name;
+                                    //sound.playType = SoundPlayType.EFFECT;
+                                     
+                                    
+                                    
+
+
+
                                     sound.clipPath = EditorHelper.GetPath(soundSource);
                                     sound.clipName = soundSource.name;
                                     sound.pitch = EditorGUILayout.Slider("Pitch", sound.pitch, -3.0f, 3.0f , GUILayout.Width(uiWidthLarge));

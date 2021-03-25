@@ -178,16 +178,10 @@ public class SoundData : BaseData
                     }
 
                 }
-
-
-
             }
 
 
         }
-
-
-
 
         //사운드가 버벅거리지않는다. 프리로딩 테스트 
         foreach (SoundClip clip in soundClips)
